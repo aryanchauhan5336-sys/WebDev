@@ -62,35 +62,38 @@ div:hover {
 </body>
 </html> -->
 
+
 <!DOCTYPE html>
 <html>
 <head>
-    <style> 
+    <style>
         div {
-        width: 100px;
-        height: 100px;
-        background-color: red;
-        transition: width 2s, height 2s, background-color 2s, transform 2s;
+        width: 150px;
+        height: 150px;
+        background-color: yellow;
+        border: 1px solid black;
         }
 
-        div:hover {
-        width: 300px;
-        height: 300px;
-        background-color: orange;  
-        transform: rotate(180deg);
+        #myDiv {
+        transform: skewX(20deg);
         }
     </style>
 </head>
 <body>
 
-    <h1>Transition + Transform</h1>
+    <h1>The skewX() Method</h1>
 
-    <p>Hover over the div element below:</p>
+    <p>The skewX() method skews an element along the X-axis by the given angle.</p>
 
-    <div></div>
+    <div>
+    This a normal div element.
+    </div>
+
+    <div id="myDiv">
+    This div element is skewed 20 degrees along the X-axis.
+    </div>
 
 </body>
 </html>
-
 
 
